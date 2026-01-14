@@ -1,0 +1,64 @@
+/* ===== Base ===== */
+body {
+    margin: 20px;
+    font-family: Verdana, Georgia, "Times New Roman", sans-serif;
+}
+
+/* ===== Card Layout ===== */
+.card {
+    width: 410px;
+    margin: 0 auto;
+    padding: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background: #faedcd;
+    color: #2b2839;
+    border-bottom: 6px solid #2a9d8f;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== Avatar ===== */
+.avatar {
+    width: 155px;
+    border: groove;
+    border-radius: 14px;
+}
+
+/* ===== Social Icons ===== */
+.social-icons {
+    margin-top: 8px;
+}
+.icon {
+    width: 32px;
+    height: 32px;
+    margin: 0 6px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor:crosshair;
+}
+
+/* ===== Holographic Hover Effect ===== */
+.holo-wrap {
+    position:relative;
+    display: inline-block;
+}
+.holo-wrap:hover::before {
+    opacity: 2;
+    transform: translateX(100%);
+}
+
+.holo-wrap:hover .icon {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px rgb(21, 105, 63));
+}
+
+/*
+Download the code to your local computer and place it
+in a folder called "business-card"
+*/
